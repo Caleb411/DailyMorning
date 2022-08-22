@@ -18,7 +18,9 @@ app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
 
 user_id = os.environ["USER_ID"]
+user_id_test = os.environ["USER_ID_TEST"]
 template_id = os.environ["TEMPLATE_ID"]
+template_id_test = os.environ["TEMPLATE_ID_TEST"]
 
 
 def get_weather(city):
@@ -70,4 +72,6 @@ data = {"my_weather": {"value": my_weather, "color": get_random_color()}, "my_lo
         "your_birthday_left": {"value": get_birthday_left(your_birthday), "color": get_random_color()},
         "words": {"value": get_words(), "color": get_random_color()}}
 res = wm.send_template(user_id, template_id, data)
+res_test = wm.send_template(user_id_test, template_id_test, data)
 print(res)
+print(res_test)
