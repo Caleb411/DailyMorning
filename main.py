@@ -65,6 +65,7 @@ your_weather, your_low, your_high = get_weather(your_city)
 data = {"my_weather": {"value": my_weather, "color": get_random_color()}, "my_low": {"value": my_low, "color": get_random_color()}, "my_high": {"value": my_high, "color": get_random_color()},
         "your_weather": {"value": your_weather, "color": get_random_color()}, "your_low": {"value": your_low, "color": get_random_color()}, "your_high": {"value": your_high, "color": get_random_color()},
         "love_days": {"value": get_count(), "color": get_random_color()},
+        "gohome_days": {"value": get_gohome(), "color": get_random_color()},
         "my_birthday_left": {"value": get_birthday_left(my_birthday), "color": get_random_color()},
         "your_birthday_left": {"value": get_birthday_left(your_birthday), "color": get_random_color()},
         "words": {"value": get_words(), "color": get_random_color()}}
