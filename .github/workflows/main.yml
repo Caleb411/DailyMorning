@@ -26,7 +26,9 @@ jobs:
       APP_ID: ${{ secrets.APP_ID }}
       APP_SECRET: ${{ secrets.APP_SECRET }}
       TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
+      TEMPLATE_ID_TEST: ${{ secrets.TEMPLATE_ID_TEST }}
       USER_ID: ${{ secrets.USER_ID }}
+      USER_ID_TEST: ${{ secrets.USER_ID_TEST }}
       START_DATE: ${{ secrets.START_DATE }}
       GOHOME_DATE: ${{ secrets.GOHOME_DATE }}
       MY_BIRTHDAY: ${{ secrets.MY_BIRTHDAY }}
